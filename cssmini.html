@@ -1,0 +1,108 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: white;
+            padding: 0;
+            margin: 0;
+            font-family: Helvetica, sans-serif;
+        }
+
+        header {
+            background-color: rgb(131, 58, 180);
+            background: linear-gradient(
+                90deg, 
+                rgba(253,29,29,1)0%,
+                rgba(131,58,180,1)50%,
+                rgba(253,29,29,1)100%
+                );
+            padding: 20px;
+        }
+
+        .headerContainer {
+            display: flex;
+        }
+
+        .holderImgProfile {
+            flex: 1;
+            text-align: center;
+        }
+
+        .imgProfile {
+            width: 100px;
+            height: 100px;
+            border: 5px solid white;
+            border-radius: 100%;
+            box-shadow: 5px 5px 10px 2px rgba(40, 40, 94, 94);
+            transition: all;
+            transition-duration: 1s;
+        }
+
+        .imgProfile:hover {
+            margin-left: -10px;
+        }
+
+        .holderDetailProfile {
+            flex: 2;
+        }
+
+        .nameProfile {
+            font-size: 24px;
+            color: white;
+            font-weight: 600;
+        }
+
+        .titleProfile {
+            color: white;
+        }
+
+        .button {
+            border: none;
+            padding: 5px 10px;
+            margin: 10px 10px 0 0;
+            border-radius: 40px;
+            font-size: 11px;
+            transition: all;
+            transition-duration: 1s;
+        }
+
+        .button:hover {
+            transform: scale(1.1);
+            transition: all 1s ease-in;
+        }
+
+        .button.download {
+            background-color: #d1d2d3;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+
+        .button.hire {
+            background-color: #1be4a1;
+            color: rgb(0, 0, 0);
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="headerContainer">
+            <div class="holderImgProfile">
+                <img class="imgProfile" src="foto.jpg" alt="">
+            </div>
+            <div class="holderDetailProfile">
+                <div class="nameProfile">Sakura Aoi</div>
+                <div class="titleProfile">Graphic Designer & Web Dev</div>
+                <div>
+                    <button class="button download">Download CV</button>
+                    <button class="button hire">Hire Me</button>
+                </div>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
